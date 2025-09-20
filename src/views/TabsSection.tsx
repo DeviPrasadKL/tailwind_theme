@@ -12,18 +12,18 @@ export default function TabsSection(): JSX.Element {
                 <TabsContent value="account">
                     <div className="flex flex-wrap gap-2 mt-4">
                         {Array(100).fill(null).map((_, i) => (
-                            <div key={i} className="h-4 w-4 bg-[hsl(var(--foreground))] rounded"></div>
+                            <div key={i} className="h-4 w-4 bg-[hsl(var(--primary))] dark:bg-green-200 rounded"></div>
                         ))}
                     </div>
                 </TabsContent>
                 <TabsContent value="password">
-                    <div className="mt-4">
+                    <div className="mt-4 pb-2">
                         <h2 className="text-xl font-semibold text-light-text dark:text-dark-text">
                             Sample text
                         </h2>
                     </div>
 
-                    <Button>Sample Button</Button>
+                    <Button className="text-white">Sample Button</Button>
 
                 </TabsContent>
             </Tabs>
