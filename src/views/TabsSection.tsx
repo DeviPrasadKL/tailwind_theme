@@ -1,5 +1,6 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
+import { Button } from "../components/ui/button"
+import type { JSX } from "react";
 
 export default function TabsSection(): JSX.Element {
     return (
@@ -11,7 +12,7 @@ export default function TabsSection(): JSX.Element {
                 </TabsList>
                 <TabsContent value="account">
                     <div className="flex flex-wrap gap-2 mt-4">
-                        {Array(100).fill(null).map((_, i) => (
+                        {Array(102).fill(null).map((_, i) => (
                             <div key={i} className="h-4 w-4 bg-[hsl(var(--primary))] dark:bg-green-200 rounded"></div>
                         ))}
                     </div>

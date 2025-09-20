@@ -1,6 +1,6 @@
 import { useTheme } from './context/ThemeContext';
 import TabsSection from './views/TabsSection';
-import { Switch } from "@/components/ui/switch"
+import { Switch } from "./components/ui/switch"
 
 function App() {
   const { toggleTheme } = useTheme();
